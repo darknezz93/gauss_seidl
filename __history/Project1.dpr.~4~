@@ -1,0 +1,16 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  gauss_Steidl in 'gauss_Steidl.pas' {Form1},
+  IntervalArithmetic in '..\IntervalArithmetic.pas',
+  GSEIDEL in '..\Lit YellowFloppy\LINEQNS\GSEIDEL.PAS';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
